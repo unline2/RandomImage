@@ -1,0 +1,11 @@
+http://img.test.com/images/bg-0.jpg
+http://img.test.com/images/bg-1.jpg
+http://img.test.com/images/bg-2.jpg
+http://img.test.com/images/bg-3.jpg
+http://img.test.com/images/bg-4.jpg
+http://img.test.com/images/bg-5.jpg
+http://img.test.com/images/bg-6.jpg
+http://img.test.com/images/bg-7.jpg
+http://img.test.com/images/bg-8.jpg
+http://img.test.com/images/bg-9.jpg
+http://img.test.com/images/bg-10.jpg
