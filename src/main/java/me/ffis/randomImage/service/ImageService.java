@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import me.ffis.randomImage.config.ReadListConfig;
 import org.springframework.stereotype.Service;
 
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -23,7 +24,7 @@ public class ImageService {
         }
         //判断集合是否为空
         if (ReadListConfig.listMap.size() == 0) {
-            log.error("listMap集合为空，读取列表文件失败");
+            log.error("listMap集合为空，请检查列表文件是否存在");
             return null;
         } else {
             //根据传入的参数images获取对应的集合
@@ -33,6 +34,33 @@ public class ImageService {
             }
             //根据images集合大小生成随机数
             int index = (int) (Math.random() * images.size());
+            //获取随机的图片地址
+            return images.get(index);
+        }
+    }
+
+    //获取今日图片
+    public String getImageByDate(String imageFile) {
+        //屏蔽domains的请求
+        if ("domains".equals(imageFile)) {
+            return "404";
+        }
+        //判断集合是否为空
+        if (ReadListConfig.listMap.size() == 0) {
+            log.error("listMap集合为空，请检查列表文件是否存在");
+            return null;
+        } else {
+            //根据传入的参数images获取对应的集合
+            List<String> images = ReadListConfig.listMap.get(imageFile + ".txt");
+            if (images == null) {
+                return "404";
+            }
+            //获取Calendar对象
+            Calendar calendar = Calendar.getInstance();
+            //获取今天在一年中的数字
+            int day = calendar.get(Calendar.DAY_OF_YEAR);
+            //根据今天的日期获取今日图片
+            int index = (day % images.size());
             //获取随机的图片地址
             return images.get(index);
         }

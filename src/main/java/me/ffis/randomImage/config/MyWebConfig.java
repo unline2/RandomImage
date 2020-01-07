@@ -17,6 +17,7 @@ public class MyWebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new DomainInterceptor())
                 .addPathPatterns("/random/**") //拦截哪些请求
+                .addPathPatterns("/today/**")
                 .excludePathPatterns(""); //对哪些请求不拦截
     }
 }

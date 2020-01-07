@@ -6,7 +6,7 @@
 
     <groupId>me.ffis</groupId>
     <artifactId>Random-Image-Api</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <parent>
