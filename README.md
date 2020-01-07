@@ -51,8 +51,16 @@ http://localhost:9090/index.html
     
     - `{images}` 则对应为 `images.txt` 文件里面的所有图片地址
     
+2、获取每日图片：
 
-2、刷新图片缓存：
+- 请求方式：`GET请求`
+    
+    - 请求地址：`/today/{images}`
+    
+    - `{images}` 则对应为 `images.txt` 文件里面的所有图片地址
+    
+
+3、刷新图片缓存：
 
 - 请求方式：`GET请求`
 
@@ -60,6 +68,8 @@ http://localhost:9090/index.html
 
 
 ### 已完成功能：
+
+- 获取每日图片
 
 - 读取本地列表的图片地址，提供随机访问
 
