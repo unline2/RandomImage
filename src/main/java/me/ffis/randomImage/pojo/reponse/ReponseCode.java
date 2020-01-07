@@ -7,10 +7,10 @@ import lombok.ToString;
  */
 @ToString
 public enum ReponseCode implements Result {
-    FLUSH_SUCCESS(true, 100, "刷新缓存成功"),
-    FLUSH_FAIL(false, 101, "刷新缓存失败"),
-    FLUSH_IMAGES_FAIL(false, 102, "刷新图片缓存失败"),
-    FLUSH_DOMAIN_FAIL(false, 103, "刷新域名缓存失败");
+    SUCCESS(true, 100, "操作成功"),
+    FAIL(false, 101, "操作失败"),
+    FLUSH_SUCCESS(true, 102, "刷新缓存成功"),
+    FLUSH_FAIL(false, 103, "刷新缓存失败");
 
     //操作是否成功
     private boolean flag;
