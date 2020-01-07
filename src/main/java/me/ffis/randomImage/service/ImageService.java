@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
+ * 随机图片服务类
  * Created by fanfan on 2020/01/06.
  */
 

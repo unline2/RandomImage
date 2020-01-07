@@ -86,10 +86,10 @@ debug：当此属性设置为true时，将打印出logback内部日志信息，�
     name:用来指定受此loger约束的某一个包或者具体的某一个类。
     level:用来设置打印级别，大小写无关：TRACE, DEBUG, INFO, WARN, ERROR, ALL 和 OFF，还有一个特俗值INHERITED或者同义词NULL，代表强制执行上级的级别。如果未设置此属性，那么当前loger将会继承上级的级别。
     addtivity:是否向上级logger传递打印信息。默认是true(当为true时，还会被匹配到的root再次输出一次log)-->
-    <logger name="org.apache.ibatis.cache.decorators.LoggingCache" level="DEBUG" additivity="false">
+    <logger name="org.apache.ibatis.cache.decorators.LoggingCache" level="INFO" additivity="false">
         <appender-ref ref="CONSOLE"/>
     </logger>
-    <logger name="org.springframework.boot" level="DEBUG"/>
+    <logger name="org.springframework.boot" level="INFO"/>
     <logger name="org.springframework.boot.autoconfigure" level="INFO"/>
     <!--邮件单独输出的logger-->
 <!--    <logger name="mailLogs" additivity="false" level="INFO">-->
@@ -99,7 +99,7 @@ debug：当此属性设置为true时，将打印出logback内部日志信息，�
     <!--
     root节点是必选节点，用来指定最基础的日志输出级别，只有一个level属性。
     level：用来设置打印级别，大小写无关：TRACE, DEBUG, INFO, WARN, ERROR, ALL 和 OFF，不能设置为INHERITED或者同义词NULL。默认是DEBUG。 -->
-    <root level="info">
+    <root level="INFO">
         <!--<appender-ref ref="ASYNC"/>-->
         <!--appender将会添加到这个loger-->
         <appender-ref ref="FILE"/>
