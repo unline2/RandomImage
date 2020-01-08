@@ -85,4 +85,4 @@ http://localhost:9090/index.html
 
 [license]:https://img.shields.io/github/license/noisky/Random-Image-Api?color=blue
 [GitHub repo size]:https://img.shields.io/github/repo-size/noisky/Random-Image-Api?logo=git
-[random-img]:https://img.ffis.me/images/2020/01/07/imagesApi.png
+[random-img]:https://img.ffis.me/images/2020/01/08/QQ20200108160257.png
