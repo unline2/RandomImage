@@ -49,7 +49,7 @@ http://localhost:9090/index.html
     
     - 请求地址：`/random/{images}`
     
-    - `{images}` 则对应为 `images.txt` 文件里面的所有图片地址
+    - `{images}` 则对应为存放图片地址的文件名 `images.txt` 去掉后缀
     
 2、获取每日图片：
 
@@ -57,7 +57,7 @@ http://localhost:9090/index.html
     
     - 请求地址：`/today/{images}`
     
-    - `{images}` 则对应为 `images.txt` 文件里面的所有图片地址
+    - `{images}` 则对应为存放图片地址的文件名 `images.txt` 去掉后缀
     
 
 3、刷新图片缓存：
