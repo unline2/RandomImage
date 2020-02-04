@@ -1,0 +1,3 @@
+# Set the project language to Java
+*.js linguist-language=java
+*.html linguist-language=java
