@@ -1,2 +1,5 @@
 server:
-  port: 9090
+  port: 9090 # 服务端口
+# 自定义设置
+customize:
+  noReferer: false # 是否允许referer为空

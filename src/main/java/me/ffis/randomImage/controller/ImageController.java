@@ -49,7 +49,7 @@ public class ImageController {
             if (imgUrl != null) {
                 //重定向到图片地址
                 response.sendRedirect(imgUrl);
-                return new ResultResponse(ReponseCode.FAIL);
+                return new ResultResponse(ReponseCode.SUCCESS);
             }
         } catch (IOException e) {
             log.error("重定向到随机图片地址失败！", e);
@@ -58,7 +58,7 @@ public class ImageController {
     }
 
     /**
-     * 获取每日图片 暂时最多只支持365张图片 即一天换一张
+     * 获取每日图片，即一天换一张
      *
      * @param imageFile 图片列表文件名
      * @param response  response对象
